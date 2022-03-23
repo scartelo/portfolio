@@ -1,0 +1,118 @@
+:root {
+    --beige: #E5E3DC;
+    --black: #0A0A0A;
+}
+
+body{
+    background-color: var(--beige);
+    color: var(--black);
+    cursor: default;
+}
+
+a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+textarea {
+    resize: none;
+}
+
+img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 50%;
+}
+
+button {
+    padding: auto .4em;
+    background-color: var(--black);
+    color: var(--beige);
+    border-radius: 10%;
+    text-align: center;
+}
+/* Formulaire */
+#form-contact {
+    display: none;
+}
+
+#shower-form {
+    text-align: center;
+    text-decoration: underline;
+    color: var(--black);
+}
+#hider-form {
+    display: none;
+    text-align: center;
+    text-decoration: underline;
+    color: var(--black);
+}
+
+/* Display */
+
+/* Flex */
+.flex {
+    display: flex;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-sa {
+    justify-content: space-around;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-align-items-center {
+    align-items: center;
+}
+
+
+/* Margin */
+
+.mx-20 {
+    margin: auto 15%;
+}
+
+.mx-5 {
+    margin: auto 5%;
+}
+
+/* Padding */
+.pb-1em {
+    padding-bottom: 1em;
+}
+
+.pb-1cinqem {
+    padding-bottom: 2em;
+}
+
+/* Texts */
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-underline {
+    text-decoration: underline;
+}
+
+.text-color-black {
+    color: var(--black);
+}
+
+.width-100-p {
+    width: 100%;
+}
