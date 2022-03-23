@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Dan Mushinga - Portfolio</title>
+</head>
+<body class="page-contact mx-20">
+    <header>
+        <p>
+            Dan Mushinga
+        </p>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Accueil</a>    
+                </li>
+
+                <li>
+                    <a href="apropos.html">A propos</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1 class="text-center">
+        Voulez-vous commencer un nouveau projet ?
+    </h1>
+
+    <h3 class="text-center">Ou pour toute autre raison</h3>
+
+    <div class="flex flex-column flex-align-items-center">
+        <i class="fa-solid fa-envelope fa-3x"></i>
+        <p class="text-underline">mushingadan@gmail.com</p>
+    </div>
+
+    <div class="flex flex-column flex-align-items-center">
+        <i class="fa-solid fa-phone fa-3x"></i>
+        <p class="text-underline">+33 6 05 63 70 52</p>
+    </div>
+
+    <div class="flex flex-column flex-align-items-center">
+        <i class="fa-brands fa-linkedin fa-3x"></i>
+        <p><a class="text-color-black text-underline" href="https://linkedin.com/in/dan-mushinga" target="_blank" 
+        title="Aller vers la page LinkedIn de Dan Mushinga">
+            LinkedIn</a>
+        </p>
+    </div>
+
+    <div>
+        <p id="shower-form" onclick="showForm()">Cliquer ici pour afficher un formulaire de contact</p>
+        <p id="hider-form" onclick="hideForm()">Cliquer ici pour masquer ce formulaire de contact</p>
+        <form id="form-contact">
+            <fieldset>
+                <legend>Formulaire de contact</legend>
+                <!-- <label for="prenom">Prenom:</label> -->
+                <input type="text" id="prenom" name="prenom" placeholder="Prénom" maxlength="40" size="33%" required><br><br>
+                <!-- <label for="nom">Nom:</label> -->
+                <input type="text" id="nom" name="nom"  placeholder="Nom de famille" maxlength="40" size="33%" required><br><br>
+                <!-- <label for="email">Adresse mail:</label> -->
+                <input type="email" id="email" name="email" placeholder="Adresse email" size="33%" required><br><br>
+                <!-- <label for="compagnie">Entreprise:</label>
+                <input type="text" id="compagnie" name="compagnie" maxlength="60"><br><br> -->
+                <!-- <label for="objet">Objet:</label> -->
+                <input type="text" id="objet" name="objet" placeholder="Objet de votre message" maxlength="60" size="33%" required><br><br>
+                <label for="message">Message:</label><br>
+                <textarea name="message" id="message" cols="32" rows="10" placeholder="Taper votre message ici" required></textarea><br><br>
+                <label for="fichier"></label>
+                <input type="file" id="fichier" name="fichier" multiple><br><br>
+                <input type="submit" value="Envoyer">
+            </fieldset>
+        </form>
+    </div>
+    <script src="https://kit.fontawesome.com/2400145931.js" crossorigin="anonymous"></script>
+    <script src="./assets/js/contact.js"></script>
+</body>
+</html>
